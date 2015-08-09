@@ -2,31 +2,114 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+:-JDK: Java Development Kit;-javac--java compiler;debugger--java debugger
+:-jvm---java virtual machine;jre---java run time environmrnt;java loader
+
 What is IDE?
+:-Integrated Development Environment
+
 What are the IDEs available in the market to support java?
+:-Eclipse;Intellij
+
 Explain the entire java life cycle.
+:-Java life cycle follows: Editor=>Source code=>java Compiler=>Bytecode
+:-=>JVM=>Operating System
+
 what is class?
+:- blue print for an object
+
 What is object?
+:- Instance of a class
+
 What is the entry point of an application?
+:-If you have an application bundled in a JAR file, you need some way to indicate which class within the JAR file is your application's entry point. 
+:-You provide this information with the Main-Class header in the manifest
+
 Why main is static?
+:-The method is static because otherwise there would be ambiguity:
+:-and declaring it static means d/f object can share it.
+
 What is the difference between an Interface and Abstract class?
+:-Methods of a java interface are implicitly abstract and cannot
+:-have implementations. A java abstract class can have instance
+:-methods that implements a default behavior, and variables in 
+:-java interface are by default final and abstract may contain non 
+:-final variables.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+:-we cannot instantiate an abstract class or an interface;
+:-we can instantiate one of their subclasses
+
 what is Access Specifier?
+:-They set access levels for classes, variables, methods and
+:-constructors. example:(public);(private);(protected)
+
 What is OOP ? Define each feature of java OOP.
+:-Object-Oriented Programming, programming language oraganized
+:-around objects 
+:-1)Abstraction: implementation Hidding;2)Encapsulation: data hidding
+:-3)Inheritance: Reusibility of code;4)Polymorphism: ability of an object to take multiple forms
+
 What is API? Name list of API that you have used so far.
+:-Application Programming Interface: tools for building software applications.
+:-list:-java.util.Scanner;java.util.String;java.lang;e.t.c
+
 Does java support multiple inheritance?
+:-yes, an Object can have multiple types.
+
 What is method overloading and when it happens?
+:-Method overloading occurs when more than one method in the
+:-same class have the same name but different parameters
+
 What is method overriding and when it happens?
+:-if a class is called and requires a different definition for
+:-an inherited method, then once that method is redefined in the derived class
+:-then this would be overriding.
+
 Explain exceptions in java and how to handle it.
+:-exceptions occur when the program is disrupted from the normal flow of the program.
+:-we can use the try{ ...}catch(Exception)
+
 What is static keyword in java? How it has been used in variables and methods ?
+:-static is used for memory management. By declaring static variables, we can have multiple
+:-Objects use the same variable; in Methods any static method can call any
+:-other static method in the same file or any static method in a java library
+
 What is final and how it has been used variables and methods?
+:-final is used as a restriction on the user. to stop value change, stop
+:-method overridding and stop inheritance
+:- if you make a variable final(you can't change it); in method(can't override)
+
 What is final, finally and finalize?
+:-final keyword can be used along with variable and methods.
+:-finally is used for exception handling along with try and catch
+:-finalize() method is called by Garbage collection thread
+
 What is a constructor ?
+:-constructor is used to initialize our Objects
+
 What is "this" keyword in java ?
+:-this is a reference variable that refers to the current Object
+
 What is "super" keyword in java?
+:-super is a reference variable that is used to refer to immediate parent class
+
 What is JVM stand for ?
+:-Java virtual machine
+
 What version of java are you using?
+:-java version "1.8.0_51"
+
 What is JAR stand for ?
+:-JAR: java ARchive
+
 What is compile time and run time?
+:-compile time, operation performed by a compiler and requirements that must be met
+:-run time, length of time a program takes to run
+
 What is heap?
+:-specialized tree based abstract data type; that satisfies the heap property.
+
 How java manage it's memory?
+:-Objects reside in the heap. Heap is created when JVM starts up and may increase or
+:-decrease in size, When the heap becomes full, garbage is collected.
